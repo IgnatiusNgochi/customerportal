@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Listeners;
+
+use App\Events\NewCustomerHasRegisteredEvent;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+class NotifyAdminViaSlack
+{
+    /**
+     * Create the event listener.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    public function handle(NewCustomerHasRegisteredEvent $event)
+    {
+    // sleep(10);
+        dump('Send admin slack thingy');
+    }
+}
