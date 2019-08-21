@@ -28,6 +28,9 @@
                     <li class="nav-item">
                       <a class="nav-link" href="{{ route('customers.index') }}">Customers list</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/suppliers">Suppliers</a>
+                    </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

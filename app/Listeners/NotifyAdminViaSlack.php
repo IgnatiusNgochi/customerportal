@@ -21,6 +21,6 @@ class NotifyAdminViaSlack
     public function handle(NewCustomerHasRegisteredEvent $event)
     {
     // sleep(10);
-        dump('Send admin slack thingy');
+        dump('Send admin slack thingy');    
     }
 }
