@@ -15,4 +15,23 @@ class SuppliersController extends Controller
         'suppliers'=> $suppliers,
         ]);
     }
+
+
+    Public function store()
+    {
+  $data = request () -> validate([
+    'name'=> 'required',
+    'email'=> 'required',
+    'number'=> 'required',
+  ]);
+        $supplier = new Supplier ();
+        $supplier->name= request('name');
+        $supplier->email= request('email');
+        $supplier-> number=  request('number');
+
+        $supplier-> save();
+     return back();
+
+ 
+    }
 }

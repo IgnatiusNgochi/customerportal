@@ -24,7 +24,7 @@
 <div class= "row">
 <div class="col-md-12">
 
-<form action="/customers" method="post">
+<form action="suppliers" method="post">
 <div class="form-group">
 <label for="name">Name</label>
 <input type="text" name="name" placeholder="Input name" value="" class="form-control"> 
